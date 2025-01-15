@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS timestamps (
+    id SERIAL PRIMARY KEY,
+    created_at TIMESTAMP NOT NULL
+);

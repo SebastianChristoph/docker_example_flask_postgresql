@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Output Page</h1>
+    <ol>
+        {% for timestamp in timestamps %}
+            <li>{{ timestamp[0] }}</li>
+        {% endfor %}
+    </ol>
+    <a href="/">Go to Input</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <script>
+        async function addTimestamp() {
+            const response = await fetch('/add', { method: 'POST' });
+            const data = await response.json();
+            alert(data.message + ': ' + data.timestamp);
+        }
+    </script>
+</head>
+<body>
+    <h1>Input Page</h1>
+    <button onclick="addTimestamp()">Add Timestamp</button>
+    <a href="/output">Go to Output</a>
+</body>
+</html>
