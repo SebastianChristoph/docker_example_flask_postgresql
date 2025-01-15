@@ -4,7 +4,6 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Datenbankverbindung herstellen
 def get_db_connection():
     conn = psycopg2.connect(
         host="db",
