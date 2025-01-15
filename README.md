@@ -1,2 +1,4 @@
-# docker_example_flask_postgresql
-An example how to use flask and a postgre SQL in two Docker Containers
+# Run a simple flask app and a PostgreSQL in two seperate Docker containers
+
+
+Start the containers with `docker-compose up --build`
